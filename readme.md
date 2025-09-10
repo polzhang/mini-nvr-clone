@@ -5,7 +5,7 @@ A **shitty clone of Frigate NVR**. Reads RTSP streams (IP camera etc) and uses *
 ## Features
 
 * Multi-camera **RTSP stream capture**
-* **Computer vision** detections using **YOLOv8n**
+* **Person/object** detection using **YOLOv8n**
 * Live feed dashboard (localhost only)
 * *Planned:* recording, alert dashboard, motion-triggered recording, remote access
 
@@ -14,7 +14,7 @@ A **shitty clone of Frigate NVR**. Reads RTSP streams (IP camera etc) and uses *
 1. Clone repository:
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/polzhang/mini-nvr-clone>
 cd mini-nvr-clone
 ```
 
@@ -24,12 +24,12 @@ cd mini-nvr-clone
 {
   "cameras": [
     {
-      "id": "test",
-      "rtsp_url": "http://61.211.241.239/nphMotionJpeg?Resolution=320x240&Quality=Standard",
+      "id": "sample_camera",
+      "rtsp_url": "sample_rtsp_url",
       "enabled": true,
       "recording": {
         "save": true,
-        "path": "recordings/front_door/",
+        "path": "recordings/livingroom/",
         "max_file_size_mb": 500
       }
     }
@@ -37,9 +37,7 @@ cd mini-nvr-clone
 }
 ```
 
-3.
-
-Run docker container:
+3. Run docker container:
 
 ```bash
 docker run -p 5000:5000 mini-nvr-clone
