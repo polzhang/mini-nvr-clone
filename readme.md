@@ -1,6 +1,6 @@
 # Mini NVR Clone with YOLOv8n
 
-A **shitty clone of Frigate NVR**. Reads RTSP streams (IP camera etc) and uses **YOLOv8n** for **person/object detection**. Displays live feeds on a dashboard at `http://localhost:5000`. Meant to be a plug-and-play surveillance solution.
+A **shitty clone of Frigate NVR**. Reads RTSP streams (IP camera etc) and uses **YOLOv8n** for **person/object detection**. Displays live feeds on a dashboard at `http://localhost:5000` - meant to emulate a plug-and-play surveillance solution
 
 ## Features
 
@@ -43,5 +43,5 @@ cd mini-nvr-clone
 docker run -p 5000:5000 mini-nvr-clone
 ```
 
-Open `http://localhost:5000` to view **live feeds with YOLOv8n detections**.
+Open `http://localhost:5000` to view **live feeds**.
 
