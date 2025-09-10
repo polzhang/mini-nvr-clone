@@ -1,0 +1,24 @@
+{
+  "cameras": [
+    {
+      "id": "pixel",
+      "rtsp_url": "rtsp://192.168.1.119:8080/h264.sdp",
+      "enabled": true,
+      "recording": {
+        "save": true,
+        "path": "recordings/front_door/",
+        "max_file_size_mb": 500
+      }
+    },
+    {
+      "id": "test",
+      "rtsp_url": "http://61.211.241.239/nphMotionJpeg?Resolution=320x240&Quality=Standard",
+      "enabled": true,
+      "recording": {
+        "save": true,
+        "path": "recordings/front_door/",
+        "max_file_size_mb": 500
+      }
+    }
+  ]
+}
